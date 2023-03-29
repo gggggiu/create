@@ -127,6 +127,7 @@ echo "   - Telegram                : t.me/KhocengReal765"  | tee -a log-install.
 echo "   - Whatsapp                : +6285706066110"  | tee -a log-install.txt
 
 
+
 echo "------------------Script Created By Khamdani P-----------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 15 Sec"
