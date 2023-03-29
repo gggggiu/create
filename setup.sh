@@ -30,11 +30,11 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget https://autosc.faibervpn.xyz/cf.sh && chmod +x cf.sh && ./cf.sh
-wget https://autosc.faibervpn.xyz/cfws.sh && chmod +x cfws.sh && ./cfws.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/cfws.sh && chmod +x cfws.sh && ./cfws.sh
 #install ssh ovpn cdn
-wget https://autosc.faibervpn.xyz/sshcdn.sh && chmod +x sshcdn.sh && screen -S sshcdn ./sshcdn.sh
-wget https://autosc.faibervpn.xyz/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/sshcdn.sh && chmod +x sshcdn.sh && screen -S sshcdn ./sshcdn.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://autosc.faibervpn.xyz/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 wget https://autosc.faibervpn.xyz/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
