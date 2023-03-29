@@ -10,6 +10,8 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
+#Check ip vps
+GitUser="gggggiu"
 MYIP=$(wget -qO- ipinfo.io/ip);
 IZIN=$( curl https://raw.githubusercontent.com/${GitUser}/create/main/ip.sh | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
