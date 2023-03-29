@@ -35,10 +35,10 @@ wget https://raw.githubusercontent.com/${GitUser}/create/main/cfws.sh && chmod +
 #install ssh ovpn cdn
 wget https://raw.githubusercontent.com/${GitUser}/create/main/sshcdn.sh && chmod +x sshcdn.sh && screen -S sshcdn ./sshcdn.sh
 wget https://raw.githubusercontent.com/${GitUser}/create/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://autosc.faibervpn.xyz/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://autosc.faibervpn.xyz/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://autosc.faibervpn.xyz/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
 wget https://autosc.faibervpn.xyz/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
