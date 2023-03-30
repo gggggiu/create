@@ -10,8 +10,10 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
+#Check ip vps
+GitUser="gggggiu"
 MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl https://telegra.ph/IP-VPS-03-25 | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/${GitUser}/create/main/ip.sh | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -28,22 +30,22 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget https://autosc.faibervpn.xyz/cf.sh && chmod +x cf.sh && ./cf.sh
-wget https://autosc.faibervpn.xyz/cfws.sh && chmod +x cfws.sh && ./cfws.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/cfws.sh && chmod +x cfws.sh && ./cfws.sh
 #install ssh ovpn cdn
-wget https://autosc.faibervpn.xyz/sshcdn.sh && chmod +x sshcdn.sh && screen -S sshcdn ./sshcdn.sh
-wget https://autosc.faibervpn.xyz/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://autosc.faibervpn.xyz/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/sshcdn.sh && chmod +x sshcdn.sh && screen -S sshcdn ./sshcdn.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://autosc.faibervpn.xyz/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://autosc.faibervpn.xyz/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
-wget https://autosc.faibervpn.xyz/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
-wget http://autosc.faibervpn.xyz/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
-wget https://autosc.faibervpn.xyz/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://autosc.faibervpn.xyz/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/${GitUser}/create/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 rm -f /root/sshcdn.sh
 rm -f /root/ssh-vpn.sh
@@ -69,8 +71,8 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://autosc.faibervpn.xyz/set.sh"
-chmod +x /etc/set.sh
+# wget -O /etc/set.sh "https://autosc.faibervpn.xyz/set.sh"
+# chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
 clear
@@ -119,12 +121,10 @@ echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "   - Dev/Main                : KHAMDAN"  | tee -a log-install.txt
+echo "   - Dev/Main                : Horas"  | tee -a log-install.txt
 echo "   - Edited                  : Khoceng Supreme"  | tee -a log-install.txt
 echo "   - Telegram                : t.me/KhocengReal765"  | tee -a log-install.txt
-echo "   - Whatsapp                : +6285706066110"  | tee -a log-install.txt
-echo "   - Facebook                : https://www.facebook.com/khamdani.purnomo.3" | tee -a log-install.txt
-echo "------------------Script Created By Khamdani P-----------------" | tee -a log-install.txt
+echo "------------------Script Recode By Khoceng-----------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
