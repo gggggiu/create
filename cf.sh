@@ -14,9 +14,9 @@ echo "Only For Premium Users"
 exit 0
 fi
 apt install jq curl -y
-DOMAIN=faibervpn.xyz
+DOMAIN=khamdan.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.faibervpn.xyz
+SUB_DOMAIN=${sub}.khamdan.my.id
 CF_ID=khamdani608@gmail.com
 CF_KEY=585264de1ebd596a449d44f39a36125824394
 set -euo pipefail
