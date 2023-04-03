@@ -14,15 +14,15 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- myip.skyn.tech)
-IZIN=$(curl http://autosc.faibervpn.xyz/khamdan | grep $MYIP)
+GitUser="gggggiu"
+MYIP=$(wget -qO- ipinfo.io/ip)
+IZIN=$(curl https://raw.githubusercontent.com/${GitUser}/create/main/ip.sh | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
     echo -e "${green}Permission Accepted...${NC}"
 else
     echo -e "${red}Permission Denied!${NC}"
     echo "Please Contact Admin"
     echo "Telegram t.me/KhocengReal765"
-    echo "WhatsApp wa.me/6285706066110"
     rm -f /root/sshcdn.sh
     exit 0
 fi
