@@ -179,7 +179,7 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 #OpenVPN
-wget https://autosc.faibervpn.xyz/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/gggggiu/create/main/vpn.sh && chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -237,16 +237,16 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://autosc.faibervpn.xyz/add-host.sh"
-wget -O about "https://autosc.faibervpn.xyz/about.sh"
-wget -O menu "https://autosc.faibervpn.xyz/menu.sh"
-wget -O usernew "https://autosc.faibervpn.xyz/usernew.sh"
-wget -O trial "https://autosc.faibervpn.xyz/trial.sh"
-wget -O hapus "https://autosc.faibervpn.xyz/hapus.sh"
-wget -O member "https://autosc.faibervpn.xyz/member.sh"
-wget -O delete "https://autosc.faibervpn.xyz/delete.sh"
-wget -O cek "https://autosc.faibervpn.xyz/cek.sh"
-wget -O restart "https://autosc.faibervpn.xyz/restart.sh"
+wget -O add-host "https://raw.githubusercontent.com/gggggiu/create/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/gggggiu/create/main/about.sh"
+wget -O menu "https://raw.githubusercontent.com/gggggiu/create/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/gggggiu/create/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/gggggiu/create/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/gggggiu/create/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/gggggiu/create/main/member.sh"
+wget -O delete "https://raw.githubusercontent.com/gggggiu/create/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/gggggiu/create/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/gggggiu/create/main/restart.sh"
 wget -O speedtest "https://autosc.faibervpn.xyz/speedtest_cli.py"
 wget -O info "https://autosc.faibervpn.xyz/info.sh"
 wget -O ram "https://autosc.faibervpn.xyz/ram.sh"
