@@ -30,14 +30,14 @@ fi
 #Download BIN
 wget -q -O /usr/local/bin/ws-com https://script.rasyacomputer.co.id/ws/ws-com
 chmod +x /usr/local/bin/ws-com
-wget -q -O /usr/local/bin/config.yml https://autosc.faibervpn.xyz/config.yml
+wget -q -O /usr/local/bin/config.yml https://raw.githubusercontent.com/${GitUser}/create/main/config.yml
 chmod +x /usr/local/bin/config.yml
 
 # Service
 cat >/etc/systemd/system/ws-com.service <<END
 [Unit]
 Description=WebSocket Services
-Documentation=https://autosc.faibervpn.xyz
+Documentation=https://github.com/${GitUser}/create
 After=network.target nss-lookup.target
 
 [Service]
