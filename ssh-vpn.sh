@@ -15,13 +15,13 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=www.faibervpn.xyz
-organizationalunit=www.faibervpn.xyz
-commonname=www.faibervpn.xyz
+organization=github.com/gggggiu
+organizationalunit=github.com/gggggiu
+commonname=github.com/gggggiu
 email=khamdani608@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://autosc.faibervpn.xyz/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/gggggiu/create/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -90,12 +90,12 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://autosc.faibervpn.xyz/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://autosc.faibervpn.xyz/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/gggggiu/create/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://autosc.faibervpn.xyz/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/gggggiu/create/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -125,7 +125,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://autosc.faibervpn.xyz/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/gggggiu/create/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -213,7 +213,7 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
 rm /etc/issue.net
-wget -O /etc/issue.net "https://autosc.faibervpn.xyz/issue.net"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/gggggiu/create/main/issue.net"
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 service ssh restart
 service dropbear restart
