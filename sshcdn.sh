@@ -28,7 +28,7 @@ else
 fi
 
 #Download BIN
-wget -q -O /usr/local/bin/ws-com https://autoscript.rasyacomputer.co.id/ws/ws-com
+wget -q -O /usr/local/bin/ws-com https://script.rasyacomputer.co.id/ws/ws-com
 chmod +x /usr/local/bin/ws-com
 wget -q -O /usr/local/bin/config.yml https://autosc.faibervpn.xyz/config.yml
 chmod +x /usr/local/bin/config.yml
