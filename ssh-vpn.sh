@@ -267,10 +267,10 @@ wget -O port-vless "https://raw.githubusercontent.com/gggggiu/create/main/port-v
 wget -O wbmn "https://raw.githubusercontent.com/gggggiu/create/main/webmin.sh"
 wget -O xp "https://raw.githubusercontent.com/gggggiu/create/main/xp.sh"
 wget -O kernel-updt "https://raw.githubusercontent.com/gggggiu/create/main/update-kernel.sh"
-wget -O update "https://autosc.faibervpn.xyz/update-1.2.sh"
-wget -O log-ws "https://autosc.faibervpn.xyz/log-ws.sh"
-wget -O log-vless "https://autosc.faibervpn.xyz/log-vless.sh"
-wget -O cek-service "https://autosc.faibervpn.xyz/cek-service.sh"
+wget -O update "https://raw.githubusercontent.com/gggggiu/create/main/update-1.2.sh"
+wget -O log-ws "https://raw.githubusercontent.com/gggggiu/create/main/log-ws.sh"
+wget -O log-vless "https://raw.githubusercontent.com/gggggiu/create/main/log-vless.sh"
+wget -O cek-service "https://raw.githubusercontent.com/gggggiu/create/main/cek-service.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
