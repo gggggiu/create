@@ -25,9 +25,9 @@ touch /var/lib/premium-script/data-user-sstp
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=www.faibervpn.xyz
-organizationalunit=www.faibervpn.xyz
-commonname=www.faibervpn.xyz
+organization=github.com/gggggiu
+organizationalunit=github.com/gggggiu
+commonname=github.com/gggggiu
 email=khamdani608@gmail.com
 
 #install sstp
@@ -40,7 +40,7 @@ make
 cpack -G DEB
 dpkg -i accel-ppp.deb
 mv /etc/accel-ppp.conf.dist /etc/accel-ppp.conf
-wget -O /etc/accel-ppp.conf "https://autosc.faibervpn.xyz/accel.conf"
+wget -O /etc/accel-ppp.conf "https://raw.githubusercontent.com/gggggiu/create/main/accel.conf"
 sed -i $MYIP2 /etc/accel-ppp.conf
 chmod +x /etc/accel-ppp.conf
 systemctl start accel-ppp
