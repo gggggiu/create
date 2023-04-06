@@ -2,7 +2,7 @@
 # Debian 9 & 10 64bit
 # Ubuntu 18.04 & 20.04 bit
 # Centos 7 & 8 64bit 
-# By FAIBERVPN
+# By Horas Edit KhocengReal765
 # ==================================================
 
 
@@ -23,7 +23,7 @@ if [[ -e /etc/wireguard/params ]]; then
 	exit 1
 fi
 
-echo -e "${Info} Wireguard VPS AutoScript by FAIBERVPN"
+echo -e "${Info} Wireguard VPS AutoScript by Khoceng"
 # Detect public IPv4 address and pre-fill for the user
 
 # Detect public interface and pre-fill for the user
@@ -89,10 +89,10 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O add-wg "https://autosc.faibervpn.xyz/add-wg.sh"
-wget -O del-wg "https://autosc.faibervpn.xyz/del-wg.sh"
-wget -O cek-wg "https://autosc.faibervpn.xyz/cek-wg.sh"
-wget -O renew-wg "https://autosc.faibervpn.xyz/renew-wg.sh"
+wget -O add-wg "https://raw.githubusercontent.com/gggggiu/create/main/add-wg.sh"
+wget -O del-wg "https://raw.githubusercontent.com/gggggiu/create/main/del-wg.sh"
+wget -O cek-wg "https://raw.githubusercontent.com/gggggiu/create/main/cek-wg.sh"
+wget -O renew-wg "https://raw.githubusercontent.com/gggggiu/create/main/renew-wg.sh"
 chmod +x add-wg
 chmod +x del-wg
 chmod +x cek-wg
