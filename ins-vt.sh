@@ -16,7 +16,7 @@ date
 mkdir -p /etc/trojan/
 touch /etc/trojan/akun.conf
 # install v2ray
-wget https://autosc.faibervpn.xyz/go.sh && chmod +x go.sh && ./go.sh
+wget https://raw.githubusercontent.com/gggggiu/create/main/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 bash -c "$(wget -O- https://raw.githubusercontent.com/trojan-gfw/trojan-quickstart/master/trojan-quickstart.sh)"
 mkdir /root/.acme.sh
@@ -491,19 +491,19 @@ systemctl enable trojan
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O add-ws "https://autosc.faibervpn.xyz/add-ws.sh"
-wget -O add-vless "https://autosc.faibervpn.xyz/add-vless.sh"
-wget -O add-tr "https://autosc.faibervpn.xyz/add-tr.sh"
-wget -O del-ws "https://autosc.faibervpn.xyz/del-ws.sh"
-wget -O del-vless "https://autosc.faibervpn.xyz/del-vless.sh"
-wget -O del-tr "https://autosc.faibervpn.xyz/del-tr.sh"
-wget -O cek-ws "https://autosc.faibervpn.xyz/cek-ws.sh"
-wget -O cek-vless "https://autosc.faibervpn.xyz/cek-vless.sh"
-wget -O cek-tr "https://autosc.faibervpn.xyz/cek-tr.sh"
-wget -O renew-ws "https://autosc.faibervpn.xyz/renew-ws.sh"
-wget -O renew-vless "https://autosc.faibervpn.xyz/renew-vless.sh"
-wget -O renew-tr "https://autosc.faibervpn.xyz/renew-tr.sh"
-wget -O certv2ray "https://autosc.faibervpn.xyz/cert.sh"
+wget -O add-ws "https://raw.githubusercontent.com/gggggiu/create/main/add-ws.sh"
+wget -O add-vless "https://raw.githubusercontent.com/gggggiu/create/main/add-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/gggggiu/create/main/add-tr.sh"
+wget -O del-ws "https://raw.githubusercontent.com/gggggiu/create/main/del-ws.sh"
+wget -O del-vless "https://raw.githubusercontent.com/gggggiu/create/main/del-vless.sh"
+wget -O del-tr "https://raw.githubusercontent.com/gggggiu/create/main/del-tr.sh"
+wget -O cek-ws "https://raw.githubusercontent.com/gggggiu/create/main/cek-ws.sh"
+wget -O cek-vless "https://raw.githubusercontent.com/gggggiu/create/main/cek-vless.sh"
+wget -O cek-tr "https://raw.githubusercontent.com/gggggiu/create/main/cek-tr.sh"
+wget -O renew-ws "https://raw.githubusercontent.com/gggggiu/create/main/renew-ws.sh"
+wget -O renew-vless "https://raw.githubusercontent.com/gggggiu/create/main/renew-vless.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/gggggiu/create/main/renew-tr.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/gggggiu/create/main/cert.sh"
 chmod +x add-ws
 chmod +x add-vless
 chmod +x add-tr
