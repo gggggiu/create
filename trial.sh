@@ -4,7 +4,7 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl http://autosc.faibervpn.xyz/khamdan | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/gggggiu/create/main/ip.sh | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -20,7 +20,7 @@ domain=$(cat /etc/v2ray/domain)
 else
 domain=$IP
 fi
-domaincdn=$(cat /root/domainsshcdn)
+domaincdn=$(cat /root/.domain)
 
 IP=$(wget -qO- ipinfo.io/ip);
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
