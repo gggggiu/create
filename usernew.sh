@@ -17,7 +17,7 @@ read -p "Username : " Login
 read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
 
-domaincdn=$(cat /root/domainsshcdn)
+domaincdn=$(cat /root/.domain)
 IP=$(wget -qO- ipinfo.io/ip);
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
