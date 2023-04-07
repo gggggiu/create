@@ -31,7 +31,7 @@ fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/${GitUser}/create/main/cf.sh && chmod +x cf.sh && ./cf.sh
-wget https://raw.githubusercontent.com/${GitUser}/create/main/cfws.sh && chmod +x cfws.sh && ./cfws.sh
+#wget https://raw.githubusercontent.com/${GitUser}/create/main/cfws.sh && chmod +x cfws.sh && ./cfws.sh
 #install ssh ovpn cdn
 wget https://raw.githubusercontent.com/${GitUser}/create/main/sshcdn.sh && chmod +x sshcdn.sh && screen -S sshcdn ./sshcdn.sh
 wget https://raw.githubusercontent.com/${GitUser}/create/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
