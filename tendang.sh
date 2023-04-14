@@ -1,5 +1,6 @@
 #!/bin/bash
 # Script by : Horasss
+# Recode : Khoceng Supreme 
 #!/bin/bash
 clear
 MAX=1
