@@ -4,7 +4,7 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl http://autosc.faibervpn.xyz/khamdan | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/gggggiu/create/main/ip.sh | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -59,6 +59,7 @@ clear
 echo ""
 echo " Done Uninstall Webmin"
 echo " AutoScriptVPS By  Horasss"
+echo " Recode Khoceng "
 }
 if [[ "$cek" = "perl" ]]; then
 sts="${Info}"
