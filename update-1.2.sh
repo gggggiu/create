@@ -29,8 +29,8 @@ exit 0
 fi
 echo "Start Update"
 cd /usr/bin
-wget -O menu "https://autosc.faibervpn.xyz/menu.sh"
-wget -O usernew "https://autosc.faibervpn.xyz/usernew.sh"
+wget -O menu "https://raw.githubusercontent.com/gggggiu/create/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/gggggiu/create/main/usernew.sh"
 wget -O trial "https://autosc.faibervpn.xyz/trial.sh"
 wget -O change-port "https://autosc.faibervpn.xyz/change.sh"
 wget -O port-ovpn "https://autosc.faibervpn.xyz/port-ovpn.sh"
